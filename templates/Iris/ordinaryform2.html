@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ADMISSION FORM </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="ordinaryform2.css">
+   
+    </head>
+    <body>        
+        
+        <div class="grid"><h1>&nbsp;&nbsp;&nbsp;CLIENT DETAILS</h1>
+            <div class="head">
+                <div class="row1">
+                <h2> CLIENT NAME:</h2><input type="name" name="name" class="tb" required><br><br>
+                <h2> COMPANY NAME:</h2><input type="name" name="COMPANY" class="tb"  required><br><br>
+                <h2>TITLE:</h2><input type="name" name="title" class="tb"  required><br><br>
+                <h2>DEPARTMENT:</h2><input type="name" name="DEPARTMENT" class="tb"  required><br><br>
+                <h2>PREFERRED CONTACT METHOD:</h2><input type="radio" name="contp" id="mail" value="mail"  >MAIL ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="contp" id="phnno" value="phnno"  >MOBILE.NO<br><br>
+                <h2>MAIL ID:</h2><input type="name" name="contp" class="tb" required><br><br>
+                <h2>MOBILE NO:</h2><input type="name" name="contp" class="tb"  required><br><br>
+                <h2>COMPANY WEBSITE:</h2><input type="name" name="web" class="tb"  required><br><br>
+                <h2> COMPANY LOGO:</h2><input type="file" name="files" class="ff" ><input type="button" value="upload" name="upload" class="upload">  <br><br>
+                <h2>WORKING HOURS:</h2><input type="name" name="hours" class="tb"  required><br><br>
+                <h2> WORKING DAYS:</h2><input type="name" name="days" class="tb" required><br><br>
+                <h2>SUBMISSION DATE(Todays date):</h2><input  type="date" name="date" class="tb" required><br><br><br><br>
+                
+                <button type="button"  onclick="myfunction()" Class="submit">SUBMIT</button><br>
+               <button type="button" href="form.html"  Class="next">NEXT</button>
+             <script>
+        function myfunction()
+        {
+        // document.getElementById("msg").innerHTML="form submitted";
+        window.alert("form submitted successfully")
+        }
+
+     </script>
+     </div></div><br><br>
+        </div>
+
+
+          
+
+
+            <script src="bootstrap/js/bootstrap.min.js"></script>
+            <script src="bootstrap/js/jquery.min.js"></script>
+            </body>
+            </html>

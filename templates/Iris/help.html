@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IRIS</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="E:\Iris\core\static\css\bootstrap.min.css"/>
+
+        <style>
+            .xx{
+                background-color: rgb(0, 0, 0,.6);
+            }
+            .row1 {
+                background-color: rgba(194, 151, 191, 0.532);
+                width: 100%;
+                height: 25px;
+            }
+            .row3 {
+                background-image: url(IRISHEAD.gif);
+                background-repeat: no-repeat;
+
+                height: 150px;
+                width: auto;
+                background-size: cover;
+                background-repeat: no-repeat;
+                color: rgba(44, 44, 44, 0.666);
+            }
+            body {
+                
+                background-color:rgba(194, 151, 191, 0.185);
+            }
+           
+            a{
+    color: rgba(255, 255, 255, 0.608);
+    
+}
+a:hover{
+   
+    color: rgba(236, 192, 231, 0.615);
+}
+            .bloggers{
+                    background-color: rgb(174, 171, 171,0.7);
+                    height:auto;
+                    width:50% ;
+                    margin-top:3% ;
+                    margin-left: 23%;
+            }
+            #progressbar {
+    margin-bottom: 3vh;
+    overflow: hidden;
+    color: rgb(2, 2, 2);
+    padding-left: 0px;
+    margin-top: 3vh
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: x-small;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+    color: rgb(160, 159, 159);
+}
+
+#progressbar #step1:before {
+    content: "";
+    color: rgb(6, 6, 6);
+    width: 5px;
+    height: 5px;
+    margin-left: 0px !important;
+    /* padding-left: 11px !important */
+}
+
+#progressbar #step2:before {
+    content: "";
+    color: #fff;
+    width: 5px;
+    height: 5px;
+    margin-left: 32%;
+}
+
+#progressbar #step3:before {
+    content: "";
+    color: #fff;
+    width: 5px;
+    height: 5px;
+    margin-right: 32% ; 
+    /* padding-right: 11px !important */
+}
+
+#progressbar #step4:before {
+    content: "";
+    color: #fff;
+    width: 5px;
+    height: 5px;
+    margin-right: 0px !important;
+    /* padding-right: 11px !important */
+}
+
+#progressbar li:before {
+    line-height: 29px;
+    display: block;
+    font-size: 12px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: auto;
+    z-index: -1;
+    margin-bottom: 1vh;
+}
+
+#progressbar li:after {
+    content: '';
+    height: 2px;
+    background: #ddd;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    margin-bottom: 2vh;
+    top: 1px;
+    z-index: 1;
+}
+.progress-track{
+    padding: 0 8%;
+}
+#progressbar li:nth-child(2):after {
+    margin-right: auto;
+}
+
+#progressbar li:nth-child(1):after {
+    margin: auto;
+}
+
+#progressbar li:nth-child(3):after {
+    float: left;
+    width: 68%;
+}
+#progressbar li:nth-child(4):after {
+    margin-left: auto;
+    width: 132%;
+}
+
+#progressbar  li.active{
+    color: black;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: rgb(11, 11, 11);
+}
+            
+            
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="head">
+                <div class="row3"></div>
+            </div>
+            <div class="menu">
+                <div class="row1 xx">
+                   <div class="col-12">
+                        <nav>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="website.html" class="ancor m-1 p-3">HOME</a></li>
+                                <li class="list-inline-item"><a href="yourprofile.html" class="ancor m-1 p-3">YOUR PROFILE</a></li>
+                                <li class="list-inline-item"><a href="cart.html" class="ancor m-1 p-3">CART</a></li>
+                                <li class="list-inline-item"><a href="coupons.html" class="ancor m-1 p-3">COUPONS</a></li>
+                                <li class="list-inline-item"><a href="face.html" class="ancor m-1 p-3">FACE</a></li>
+                                <li class="list-inline-item"><a href="eyes.html" class="ancor m-1 p-3">EYES</a></li>
+                                <li class="list-inline-item"><a href="lips.html" class="ancor m-1 p-3">LIPS</a></li>
+                                <li class="list-inline-item"><a href="nail.html" class="ancor m-1 p-3">NAILS</a></li>
+                                <li class="list-inline-item"><a href="accessories.html" class="ancor m-1 p-3">ACCESSORIES</a></li>
+                                <li class="list-inline-item"><a href="bloggers.html" class="ancor m-1 p-3">BLOGGERS</a></li>
+                                <li class="list-inline-item"><a href="help.html" class="ancor m-1 p-3">HELP</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="trackorder m-5 p-5">
+                <div class="row5">
+                    <div class="col">
+                        <h3>TRACK ORDER</h3>
+                        <div class="progress-track" style="background-color: rgb(128, 128, 128, 0.1);">
+                            <ul id="progressbar">
+                                <li class="step0 active " id="step1">Ordered</li>
+                                <li class="step0 active text-center" id="step2">Shipped</li>
+                                <li class="step0 active text-right" id="step3">On the way</li>
+                                <li class="step0 text-right" id="step4">Delivered</li>
+                            </ul>
+                        </div>
+                        
+                            <div class="col-12 d-flex" style="background-color: rgb(128, 128, 128, 0.1);">
+                                <img src="handbag accesories.jpg" style="width: 20%; height: 20%;" class="d-block" />
+
+                                <h6 style="margin-left: 3%;">GLITTER LIQUID LIPSTICK</h6>
+                                <h4 style="margin-left: 5%;">INR 399</h4>
+                                <label style="margin-left: 25%;">QUANTITY</label>
+                                <input type="number" style="height: 5%; width: 5%; margin-left: 3%;" id="quantity" />
+
+                                <button type="button" class="text-seconday bg-light text-dark" style="height: 10%; width: 10%; margin-top: 3%; margin-left: 3%; border-radius: 10px;">REMOVE</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cancelorder m-5 p-5">
+                <div class="row6">
+                    <div class="col">
+                        <h3>CANCEL ORDER</h3>
+                        <div class="col-12 d-flex" style="background-color: rgb(128, 128, 128, 0.1);">
+                            <img src="handbag accesories.jpg" style="width: 20%; height: 20%;" class="d-block" />
+        
+                            <h6 style="margin-left: 3%;">GLITTER LIQUID LIPSTICK</h6>
+                            <h4 style="margin-left: 5%;">INR 399</h4>
+                            
+        
+                            <button type="button" class="text-seconday bg-light text-dark" style="height: 10%; width: 10%; margin-top: 3%; margin-left: 30%; border-radius: 10px;">CANCEL ORDER</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="returnorder  m-5 p-5">
+                <div class="row7">
+                    <div class="col">
+                        <h3>RETURN ORDER</h3>
+                        <div class="col-12 d-flex" style="background-color: rgb(128, 128, 128, 0.1);">
+                            <img src="handbag accesories.jpg" style="width: 20%; height: 20%;" class="d-block" />
+        
+                            <h6 style="margin-left: 3%;">GLITTER LIQUID LIPSTICK</h6>
+                            <h4 style="margin-left: 5%;">INR 399</h4>
+                          
+        
+                            <button type="button" class="text-seconday bg-light text-dark" style="height: 10%; width: 10%; margin-top: 3%; margin-left: 30%; border-radius: 10px;">RETURN ORDER</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logout m-5 p-5" style="background-color: rgb(128, 128, 128, 0.1);">
+                <div class="row8">
+                    <div class="col">
+                        <h3>LOGOUT</h3>
+                        <p>Once Logged Out Must Re-Login by Re-Validating the OTP</p>
+                       <a href="login.html"> <button class="logoout" id="logoout" style="height: 10%; width: 10%; margin-top: 3%; margin-left: 90%; border-radius: 10px;">LOGOUT</button></a>
+                    </div>
+                </div>
+            </div>
+
+            
+        
+        
+
+        </div>
+    </body>
+</html>

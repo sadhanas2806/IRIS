@@ -1,0 +1,83 @@
+{% extends 'Iris/layout.html' %}
+{% block title %}IRIS{% endblock %}
+{% block styleblock %}
+  <style type="text/css">
+
+  </style>
+{% endblock %}
+{% block content %}
+ <div class="row2 p-3 m-3">
+      <h2>
+          MY ORDERS
+      </h2>
+  </div>
+{% if yourorders: %}
+<div class="container">
+<a  href=" {{ url_for('Iris.Delete_myorders') }}"><button type="submit" class="btn text-center text-dark " style="margin-left:85%; background-color: rgba(169, 114, 114, 0.338);"> CANCEL ORDER</button></a><br><br>
+
+ </div> 
+{% else %}
+  <div class="container col-lg-12 text-center" style="background-color:rgb(203, 174, 174,.1); margin-left: 24%;  width: 50%; height: 15%; "><br>
+  
+  <h3 class="text-center">NO ORDERS FOUND !</h3>
+  <div class="img"><img src="static/images/no.png" style="height:450px;width:250px;"></div>
+
+</div><br><br>
+{% endif %}
+<br><br><br>
+ <div class=" row3" style="height: 100%; width: auto;">
+    {% if yourorders: %} 
+    {% for row in yourorders %}
+    
+    
+      
+           <table class="container" style="width:100%;background-color:  rgb(203, 174, 174,.1);">
+        <thead>
+        <tr style="font-size: large;">
+          <th>PRODUCT</th>
+          <th  class="text-center">PRODUCT NAME</th>
+          <th class="text-center">PRODUCT QUANTITY</th>
+          <th class="text-center">PRODUCT AMOUNT</th>
+          <th class="text-center">TOTAL AMOUNT</th>
+          <th></th>
+        </tr>
+        </thead><br>
+        <tbody>
+            
+                 <div class="container table-responsive">    
+
+            <tr>
+                <td class="text-center"><img src="static\images\{{row.product_pic}}" style="width: 340px; height: 240px;" class="d-block" /></td>
+                <td class="text-center"><h6 style="margin-left: 3%; font-size: medium;">{{row.product_name}}</h6></td>
+                <td class="text-center"><h5 style="margin-left: 5%; font-size: medium;"> {{row.quantity}}</h5></td>
+                <td class="text-center"><h4 style="margin-left: 5%; font-size: medium;"> {{row.product_amount}}</h4></td>
+                <td class="text-center"><h5 style="margin-left: 5%; font-size: medium;"> {{row.total_product_amount}}</h5></td>
+               
+              </tr>
+              </div>
+              
+</div>
+   {% endfor %}
+      {% endif %}
+</tbody>
+</table>
+
+
+<br><br><br>
+  
+
+ 
+<br><br><br>
+
+
+  
+{% endblock %}
+{% block scriptblock %}
+
+  
+
+
+</script>
+{% endblock %}
+          
+            

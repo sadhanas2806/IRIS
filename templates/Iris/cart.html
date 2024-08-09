@@ -1,0 +1,88 @@
+
+{% extends 'Iris/layout.html' %}
+{% block title %}IRIS{% endblock %}
+{% block styleblock %}
+  <style type="text/css">
+
+  </style>
+{% endblock %}
+{% block content %}
+
+
+<div class="car">
+  <div class="row2 p-3 m-3">
+      <h2>
+          CART
+      </h2>
+  </div>
+  <div class=" row3 " style="height: 100%; width: auto;">
+    {% if user_add_to_cart : %} 
+    {% for row in user_add_to_cart %}
+    
+    
+      
+           <table class="container" style="width:100%;background-color:  rgb(203, 174, 174,.1);">
+        <thead>
+        <tr style="font-size: large;">
+          <th>PRODUCT</th>
+          <th>PRODUCT NAME</th>
+          <th>PRODUCT QUANTITY</th>
+          <th>PRODUCT AMOUNT</th>
+          <th>TOTAL AMOUNT</th>
+          <th></th>
+        </tr>
+        </thead><br>
+        <tbody>
+            
+                 <div class="table-responsive text-center">    
+
+            <tr>
+                <td><img src="static\images\{{row.product_pic}}" style="width: 340px; height: 240px;" class="d-block" /></td>
+                <td><h6 class="text-center" style="margin-left: 3%; font-size: medium;">{{row.product_name}}</h6></td>
+                <td><h5 class="text-center" style="margin-left: 5%; font-size: medium;"> {{row.quantity}}</h5></td>
+                <td><h4 class="text-center" style="margin-left: 5%; font-size: medium;"> {{row.product_amount}}</h4></td>
+                <td><h5 class="text-center" style="margin-left: 5%; font-size: medium;"> {{row.total_product_amount}}</h5></td>
+                <td><h4 class="text-center" style="margin-left: 5%; font-size: medium;">    <button type="button" class="btn text-center text-dark bg-light " id="remove1"  style="height: 10%; width: 80%; margin-top: 3%; margin-left: 3%; border-radius: 10px; background-color:rgba(230, 230, 250, 0.547);" ><a href="{{ url_for('Iris.Delete_add_to_cart', added_id = row.added_id) }}" class="text-secondary">REMOVE</button></a> </h4></td>
+              </tr>
+              </div>
+              
+</div>
+
+
+      {% endfor %}
+      {% endif %}
+</tbody>
+</table>
+
+{% if user_add_to_cart : %} 
+  
+
+ <div class="check container text-right">
+      <a href="{{url_for('Iris.Viewcheckout')}}"><button type="button" class="btn text-center text-dark bg-light check" id="remove"  style="height: 15%; width: 10%; margin-top: 3%; margin-right: 5%; border-radius: 10px; background-color:rgba(230, 230, 250, 0.547);">CHECKOUT</button></a><br><br><br>
+  </div><br><br><br>
+
+  
+  {% else %}
+  <div class="col-lg-12 text-center" style="background-color:rgb(203, 174, 174,.1); margin-left: 24%;  width: 50%; height: 15%; "><br>
+  
+  <h3 class="text-center">NO ITEMS FOUND !</h3>
+  <div class="img"><img src="static/images/nailgif3.gif" style="height:200px;width:250px;"></div><br>
+
+</div><br><br>
+
+  
+{% endif %}
+
+  
+{% endblock %}
+{% block scriptblock %}
+
+
+  
+
+
+
+
+</script>
+{% endblock %}
+ 

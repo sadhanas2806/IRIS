@@ -1,0 +1,48 @@
+{% extends 'Iris/layout.html' %}
+{% block title %}IRIS{% endblock %}
+{% block styleblock %}
+  <style type="text/css">
+
+  </style>
+{% endblock %}
+{% block content %}
+<div class="row row-cols-1 row-cols-md-3 g-4 l p-5 ">
+    {% for row in get_product_type %}
+    <div class="col p-5">
+        <form action="{{url_for('Iris.Postcart')}}" method="POST" id="face_form">
+            <div class="card h-75">
+                <img src="static\images\{{row.product_pic}}" class="card-img-top " style="width:auto !important;height:350px !important;">
+                <div class="card-body">
+                    <h5 class="card-title">  INR {{row.product_amount}} <br>{{row.product_name}} </h5>
+                    <p class="card-text">{{row.produc_desc}}</p>
+
+
+                    <h6>QUANTITY</h6><input type="number" name="product_quantity" id="product_quantity" min="1" max="10" step="1" class="form-control" placeholder="1" style="height:30px; width:60px "><br>
+                    <input type="hidden" name="product_amount" id="product_amount" class="form-control" value="{{row.product_amount}}">
+
+                    <input type="hidden" name="user_id" id="user_id" class="form-control" value="{{session_user['user_id']}}">
+
+
+                    <input type="hidden" name="product_id" id="product_id" class="form-control" value="{{row.product_id}}">
+
+
+                    <input type="submit" value="ADD TO CART" class="btn  add_to_cart" style="background-color: rgba(169, 114, 114, 0.338);">
+                </div>
+            </div>
+        </form>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+  
+{% endblock %}
+{% block scriptblock %}
+
+  
+
+
+</script>
+{% endblock %}
+          

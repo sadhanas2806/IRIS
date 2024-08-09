@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}IRIS{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style type="text/css">
+      body{
+         background-color: rgba(205, 125, 125, 0.216);
+      }
+        .head {
+           background-color: rgba(169, 114, 114, 0.834);
+          
+        }
+        .errors{
+          color:red;
+        }
+    </style>
+    {% block styleblock %} {% endblock %}
+</head>
+
+<body>
+    <!-- default navbar and header -->
+    <div class="container-fluid">
+        <div class="head">
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- <div class="logo"><img src="static\images\EYEIS.png" style="height:250px; width:600px;" ></div> -->
+                    <div class="title text-center" style="font-family:fantasy;font-size:500%;color: rgb(244 226 226);">
+                      <img src="static/images/abcd2.png" style="width:210px;height:200px;">IRIS
+
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    {% block content %} {% endblock %}
+    </body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+  <!-- your script lines -->
+  {% block scriptblock %} {% endblock %}
+</html>

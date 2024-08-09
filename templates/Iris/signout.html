@@ -1,0 +1,51 @@
+{% extends 'Iris/layout.html' %}
+{% block title %}IRIS{% endblock %}
+{% block styleblock %}
+  <style type="text/css">
+.errors{
+  color:brown;
+}
+  </style>
+{% endblock %}
+{% block content %}
+<div class="container mt-5">
+  {% for mesg in get_flashed_messages(category_filter=["MsgSuccess"]) %}
+  <div class="alert alert-success text-center" id="successMessage" >
+      <h4><img src="/static/images/right.jpeg" alt="right"height="21" width="21">{{ mesg }}</h4>
+  </div>
+  {% endfor %}
+  {% for mesg in get_flashed_messages(category_filter=["Msgerror"]) %}
+  <div class="alert alert-danger text-center" id="successMessage" >
+      <h4><img src="/static/images/wrong.jpeg" alt="wrong"height="21" width="21">{{ mesg }}</h4>
+  </div>
+  {% endfor %}
+</div>
+<br><br><br>
+<div class="row">
+ 
+
+  <br><br><br>
+<div class="col-lg-12 text-center" style="background-color:rgb(203, 174, 174,.1); margin-left: 24%;  width: 50%; height: 25%; "><br><br>
+  <div class="img"><img src="static/images/giphy.gif" style="height:250px;width:250px;"></div>
+<div class="h4 text-center"><br><br> SIGN OUT</div><br>
+<div class="h6 text-center"> Are You Sure Want To Sign out ?</div><br>
+<div class="button text-center">
+<a href="{{url_for('Iris.Signout')}}"><button type="button" class="btn btn-primary text-secondary bg-light"> SIGNOUT</button> </a></div><br><br>
+</div></div>
+<br><br><br> 
+
+  
+{% endblock %}
+{% block scriptblock %}
+
+  
+
+
+</script>
+{% endblock %}
+          
+                  
+ 
+           
+           </body>
+           </html>

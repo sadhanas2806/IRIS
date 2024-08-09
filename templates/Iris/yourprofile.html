@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IRIS</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+        <link rel="stylesheet" href="static\css\bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+
+
+body {
+                    background-color: rgba(230, 230, 250, 0.437);
+                }
+                .row {
+                    background-color: lavender;
+                    height: 150px;
+                    width: auto;
+                }
+                .material-symbols-outlined {
+                    font-variation-settings: "FILL" 10, "wght" 800, "GRAD" 10, "opsz" 50;
+                }
+                .row1 {
+                    background-color: rgb(230, 230, 250, 0.5);
+                    width: 100%;
+                    height: 40px;
+                }
+                a{
+                color: grey;
+                }
+                a:hover{
+                color:rgb(243, 243, 252);
+                }
+                .dropdown .dropbtn {
+                    font-size: 16px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    padding: 14px 16px;
+                    background-color: inherit;
+                    font-family: inherit;
+                    margin: 0;
+                }
+
+                .navbar a:hover,
+                .dropdown:hover .dropbtn {
+                    background-color: rgb(230, 230, 250, 0.5);
+                }
+
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: rgb(230, 230, 250, 0.5);
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+
+                .dropdown-content a {
+                    float: none;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+
+                .dropdown-content a:hover {
+                    background-color: rgb(230, 230, 250, 0.5);
+                }
+
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+            .form {
+                width: 50%;
+                height: 100%;
+               
+                
+            }
+          
+            .tb {
+                height:4%;
+                width: 50%;
+               background-color:rgba(255, 255, 255, 0.185);
+                border-top:rgba(255, 255, 255, 0.185);
+                border-left:rgba(255, 255, 255, 0.185);
+                border-right:rgba(255, 255, 255, 0.185);
+                color: rgb(0, 0, 0);
+                border-bottom: solid rgb(203, 199, 199);
+            }
+            .tb:hover {
+                width:60%;
+                height:5%;
+            }
+            .ss {
+                background-color: rgb(255, 255, 255);
+            }
+            button {
+                background-color: rgb(255, 255, 255);
+                border-radius: 15px;
+                height:30px ;
+                width:8a0px;
+            }
+            button:hover{
+                background-color: rgba(185, 179, 179, 0.186);
+                border-radius:20px;
+                height:40px;
+                width: 90px;
+            }
+            .fb {
+                margin-top: 5%;
+                margin-left: 30%;
+                height: 100%;
+                width: 50%;
+               border-radius: 10px;
+               box-shadow: 500%;
+               text-shadow: 30%;
+                background-color: white;
+                background-size: contain;
+            }
+            
+            
+        </style>
+    </head>
+
+            <body>
+                <div class="container-fluid">
+                    <div class="head">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="h1 text-center text-secondary" style="font-family: Sofia, sans-serif; font-size: 500%;"><img src="magic.png" style="width: 150px; height: 150px;" />&nbsp;&nbsp;IRIS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="row1">
+                            <div class="col-12">
+                                <nav>
+                                    <span> <ul class="list-inline">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+                                        <li class="list-inline-item"><a href="sigin.html" class="ancor material-symbols-outlined text-secondary">login</a></li>
+        
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+                                        <li class="list-inline-item"><a href="website.html" class="ancor material-symbols-outlined text-secondary">home</a></li>
+        
+        
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        
+                                        <li class="list-inline-item"><a href="about.html" class="ancor material-symbols-outlined text-secondary">service_toolbox</a></li>
+        
+        
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+                                        <li class="list-inline-item">
+                                            <div class="dropdown">
+                                                <button class="dropbtn ancor text-secondary">
+                                                    <div class="icon material-symbols-outlined">backpack</div>
+        
+                                                    <i class="fa fa-caret-down"></i>
+                                                </button>
+                                                <div class="dropdown-content">
+                                                    <a href="face.html">FACE</a>
+                                                    <a href="eyes.html">EYES</a>
+                                                    <a href="lips.html">LIPS</a>
+                                                    <a href="nail.html">NAILS</a>
+                                                    <a href="accessories.html">ACCESSORIES</a>
+                                                </div>
+        
+        
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+                                                <li class="list-inline-item"><a href="cart.html" class="ancor material-symbols-outlined text-secondary">shopping_cart_checkout</a></li>
+        
+        
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+                                                
+        
+        
+                                                <li class="list-inline-item"><a href="signout.html" class="ancor material-symbols-outlined text-secondary">logout</a></li>
+        
+        
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                              
+        
+        
+                                                <li class="list-inline-item"><a href="yourprofile.html" class="ancor material-symbols-outlined text-secondary">person</a></li>
+        
+        
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+                                                <!-- <li class="list-inline-item"><a href="yourprofile.html" class="ancor m-1 p-3">YOUR PROFILE</a></li>
+                                      <li class="list-inline-item"><a href="cart.html" class="ancor m-1 p-3">CART</a></li>
+                                      <li class="list-inline-item"><a href="coupons.html" class="ancor m-1 p-3">COUPONS</a></li>
+                                      <li class="list-inline-item"><a href="face.html" class="ancor m-1 p-3">FACE</a></li>
+                                      <li class="list-inline-item"><a href="eyes.html" class="ancor m-1 p-3">EYES</a></li>
+                                      <li class="list-inline-item"><a href="lips.html" class="ancor m-1 p-3">LIPS</a></li>
+                                      <li class="list-inline-item"><a href="nail.html" class="ancor m-1 p-3">NAILS</a></li>
+                                      <li class="list-inline-item"><a href="accessories.html" class="ancor m-1 p-3">ACCESSORIES</a></li>
+                                      <li class="list-inline-item"><a href="bloggers.html" class="ancor m-1 p-3">BLOGGERS</a></li>
+                                      <li class="list-inline-item"><a href="help.html" class="ancor m-1 p-3">HELP</a></li> -->
+                                            </div>
+        
+        
+                            
+                                    </span>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <form>
+                <div class="form fb">
+                    <div class="formcon rb">
+                        <div class="row2">
+                            <div class="col-12 p-5">
+                                <label>EMAIL :</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="email" name="email" class="email tb" /><br />
+                                <br />
+                                <label>NAME :</label> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="name" name="name" class="name tb" /><br />
+                                <br />
+                                <label>MOBILE NO :</label>&nbsp; &nbsp; &nbsp;<input type="number" name="mobile" class="number tb" /><br />
+                                <br />
+                                <label>D O B:</label>  &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="date" name="date" class="date tb" /><br />
+                                <br />
+                                <label>AREA :</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; <input type="text" name="no" class="no tb" /><br />
+                                <br />  
+                                <label>CITY :</label>&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="city" class="city tb" /><br />
+                                <br />
+                                <label>STATE :</label> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="state" class="state tb" /><br />
+                                <br />
+                                <label>POSTAL CODE :</label> &nbsp; <input type="number" name="code" class="code tb" /><br />
+                                <br />
+                                <label>GENDER :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" id="gender" class="gender" style="background-color: rgba(205, 201, 204, 0.6);" />MALE <input type="radio" name="gender" id="gender" class="gender" style="background-color: rgba(205, 201, 204, 0.6);" />FEMALE
+                                <input type="radio" name="gender" id="gender" class="gender" style="background-color: rgba(205, 201, 204, 0.6);" />TRANSGENDER<br />
+                                <br />
+                                <label>SKIN TYPE :</label> &nbsp; &nbsp; &nbsp;  &nbsp; 
+                                <select style="background-color: rgba(255, 255, 255, 0.6);">
+                                    <option value="OILY" class="ss">OILY</option>
+                                    <option value="DRY" class="ss">DRY</option>
+                                    <option value="COMBAINED" class="ss">COMBAINED</option>
+                                    <option value="SENSITIVE" class="ss">SENSITIVE</option>
+                                </select>
+                                <br />
+                                <br />
+                                <button type="button" class="btn-btn-outline-dark text-dark text-center" style="margin-top:5% ;margin-left:40%;">UPDATE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
